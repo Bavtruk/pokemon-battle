@@ -37,12 +37,23 @@ while True:
 
     if choice == '1':
         # https://www.w3schools.com/python/python_dictionaries_access.asp
-        pass
+       pokemonsindex = input()
+       print("you choise" + pokemonsindex)
+       print(pokemons[int(pokemonsindex)])
+       pass
     elif choice == '2':
         # https://www.w3schools.com/python/python_lists_sort.asp
+        def sort_total(pokemon):
+            return int(pokemon["total"])
+        pokemons.sort(key = sort_total, reverse = True)
+        print(pokemons[0:10])
         pass
     elif choice == '3':
         # https://www.w3schools.com/python/python_lists_sort.asp
+        def sort_total(pokemon):
+            return int(pokemon["total"])
+        pokemons.sort(key = sort_total, reverse = False)
+        print(pokemons[0:10])
         pass
     elif choice == '4':
         # Battle
